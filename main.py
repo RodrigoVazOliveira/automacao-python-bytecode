@@ -1,4 +1,4 @@
-from bytebank import Funcionario
+from src.bytebank import Funcionario
 
 #rodrigo = Funcionario(nome="Rodrigo Vaz", salario=2500, data_nascimento='10/01/2000')
 #print(rodrigo)

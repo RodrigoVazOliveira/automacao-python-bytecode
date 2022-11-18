@@ -1,6 +1,6 @@
 import pytest
 from pytest import mark
-from bytebank import Funcionario
+from src.bytebank import Funcionario
 
 
 class TestClass:
