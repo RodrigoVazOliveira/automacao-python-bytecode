@@ -1,5 +1,6 @@
 from bytebank import Funcionario
 
+
 class TestClass:
 
     def test_quando_idade_recebe_13_03_2000_deve_retornar_22(self):
@@ -18,3 +19,18 @@ class TestClass:
 
         assert esperado.__eq__(resultado)
 
+    def test_calcular_bonus_com_valor_maior_que_dez_mil_deve_retornar_valor_zero(self):
+        entrada = 10100
+        esperado = 0
+        funcionario_test = Funcionario('Usuario test', '11/11/1987', entrada)
+        resultado = funcionario_test.calcular_bonus()
+
+        assert esperado == resultado
+
+    def test_calcular_bonus_com_valor_menor_que_dez_mil_deve_retornar_valor_zero(self):
+        entrada = 9000
+        esperado = entrada * 0.1
+        funcionario_test = Funcionario('Usuario test', '11/11/1987', entrada)
+        resultado = funcionario_test.calcular_bonus()
+
+        assert esperado == resultado
