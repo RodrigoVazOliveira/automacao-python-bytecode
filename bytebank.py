@@ -35,3 +35,15 @@ class Funcionario:
 
     def __str__(self):
         return f'Funcionario({self._nome}, {self._data_nascimento}, {self._salario})'
+
+    def decrescimo_salario(self):
+        if self._validar_decrescimo():
+            decrescimo = self._salario * 0.1
+            self._salario -= decrescimo
+
+    def _validar_decrescimo(self):
+        return self._salario >= 100000 and self._verificar_se_sobrenome_e_da_diretoria()
+
+    def _verificar_se_sobrenome_e_da_diretoria(self):
+        sobrenomes = ['Bragança', 'Windsor', 'Bourbon', 'Yamato', 'Al Saud', 'Khan', 'Tudor', 'Ptolomeu']
+        return self.sobrenome() in sobrenomes

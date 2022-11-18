@@ -34,3 +34,12 @@ class TestClass:
         resultado = funcionario_test.calcular_bonus()
 
         assert esperado == resultado
+
+    def test_quando_decrescimo_salario_recebe_cem_mil_deve_retonar_noventa_mil(self):
+        entrada = 100000
+        esperado = 90000
+        funcionario_test = Funcionario("Test Bragança", '11/11/1598', entrada)
+        funcionario_test.decrescimo_salario()
+        resultado = funcionario_test.salario
+
+        assert esperado == resultado
