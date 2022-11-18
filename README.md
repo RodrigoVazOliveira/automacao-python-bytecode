@@ -25,3 +25,8 @@ Para ver as linhas faltantes:
 ```bash
 $ pytest --cov=src  tests/ --cov-report term-missing
 ```
+
+Gerando relatório em HTML
+```bash
+$ pytest --cov=src  tests/ --cov-report html
+```
