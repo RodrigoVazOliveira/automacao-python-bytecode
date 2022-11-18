@@ -50,3 +50,10 @@ class TestClass:
         resultado = funcionario_test.salario
 
         assert esperado == resultado
+
+    def test_retorno_do_objeto_funcionario(self):
+        esperado = 'Funcionario(Rodrigo Vaz, 12/11/1998, 20000)'
+        funcionario_test = Funcionario('Rodrigo Vaz', '12/11/1998', 20000)
+        resultado = funcionario_test.__str__()
+
+        assert esperado == resultado

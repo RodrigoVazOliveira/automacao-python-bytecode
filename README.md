@@ -13,3 +13,15 @@ Para ativar o ambiente
 ```bash
 $ source venv/bin/activate
 ```
+
+cobertura de teste:
+
+```bash
+$ pytest --cov=src  tests/
+```
+
+Para ver as linhas faltantes:
+
+```bash
+$ pytest --cov=src  tests/ --cov-report term-missing
+```
