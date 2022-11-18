@@ -27,5 +27,11 @@ class Funcionario:
             valor = 0
         return valor
 
+    def sobrenome(self):
+        nome_completo = self.nome.strip()
+        nome_quebrado = nome_completo.split()
+
+        return nome_quebrado[-1]
+
     def __str__(self):
         return f'Funcionario({self._nome}, {self._data_nascimento}, {self._salario})'
