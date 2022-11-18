@@ -30,3 +30,9 @@ Gerando relatório em HTML
 ```bash
 $ pytest --cov=src  tests/ --cov-report html
 ```
+
+gerar um relatorio em xml
+```bash 
+$ pytest --junitxml report.xml or 
+$ pytest --cov-report xml
+```
