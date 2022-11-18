@@ -11,5 +11,5 @@ $ python3 -m venv venv
 Para ativar o ambiente
 
 ```bash
-$ venv/bin/activate
+$ source venv/bin/activate
 ```
